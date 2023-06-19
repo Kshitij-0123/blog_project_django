@@ -1,0 +1,24 @@
+{% extends 'base.html' %} {% load static %} {% block head %}
+<link
+  rel="stylesheet"
+  type="text/css"
+  href="{% static 'css/blog_list.css' %}"
+/>
+{% endblock %} {% block content %} {% if user.is_authenticated %}
+<ul class="blogs">
+  {% for post in blog_posts %}
+  <li class="blog-post">
+    {% if post.image %}
+    <img src="{{ post.image.url }}" alt="Post Image" />
+    {% endif %}
+    <div class="blog-post_details">
+      <a href="{% url 'blog:blog_detail' post.pk %}">{{ post.title }}</a>
+      <p>{{ post.brief_text }}</p>
+    </div>
+  </li>
+  {% endfor %}
+</ul>
+{% else %}
+<h2>Login to view blog posts</h2>
+<a href="{% url 'blog:login' %}">Login</a>
+{% endif %} {% endblock %}

@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Quicksand:wght@300;400;500;600;700&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* * {
+    font-family: 'Quicksand', sans-serif;
+} */
+
+.login-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+.login-heading {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: 'Dosis', sans-serif;
+    margin-bottom: 20px;
+}
+
+.login-form .form-group {
+    margin-bottom: 10px;
+}
+
+.login-form label {
+    margin-bottom: 10px;
+    font-family: 'Dosis', sans-serif;
+    display: block;
+    font-weight: bold;
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"] {
+    width: calc(100% - 13px);
+    padding: 5px;
+}
+
+.login-form button {
+    display: block;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #4Caf50;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.login-form button:hover {
+    background-color: #419244;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn2 {
+    all: unset;
+    display: block;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #006ee4;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.btn2:hover {
+    background-color: #0056b3;
+}
+
+.error {
+    color: red;
+    margin-top: 10px;
+}

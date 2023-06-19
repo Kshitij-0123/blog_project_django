@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Quicksand:wght@300;400;500;600;700&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* font-family: 'Dosis', sans-serif; */
+/* font-family: 'Josefin Sans', sans-serif; */
+/* font-family: 'Quicksand', sans-serif; */
+/* font-family: 'Rubik', sans-serif; */
+
+* {
+    font-family: 'Quicksand', sans-serif;
+}
+
+body {
+    background-color: #1f1f1f;
+    width: 99vw;
+    height: 97vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.create-container {
+    width: 80%;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+.create-heading {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.create-form .form-group {
+    margin-bottom: 10px;
+}
+
+.create-form label {
+    display: block;
+    font-weight: bold;
+}
+
+.create-form input[type="text"],
+.create-form textarea {
+    width: calc(100% - 13px);
+    padding: 10px 5px;
+}
+
+.create-form textarea {
+    height: 10rem;
+}
+
+.create-form select {
+    width: 100%;
+    padding: 5px;
+}
+
+.create-form button {
+    margin-top: 10px;
+}
+
+.create-form button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.create-form button:hover {
+    background-color: #45a049;
+}
+
+.create-form button:focus {
+    outline: none;
+}

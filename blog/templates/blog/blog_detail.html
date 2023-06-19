@@ -1,0 +1,19 @@
+{% extends 'base.html' %} {% load static %} {% block head %}
+<link
+  rel="stylesheet"
+  type="text/css"
+  href="{% static 'css/blog_detail.css' %}"
+/>
+{% endblock %} {% block content %}
+<div class="details">
+  <h1 class="title">{{ blog_post.title }}</h1>
+  <span class="pub">{{ blog_post.privacy }}</span>
+  <h2 class="content-brief"><i>{{ blog_post.brief_text }}</i></h2>
+  <p>{{ blog_post.content }}</p>
+  {% if blog_post.image %}
+  <img src="{{ blog_post.image.url }}" alt="{{ blog_post.title }}" />
+  {% endif %}
+  <span class="author">{{blog_post.author}},</span>
+  <span class="date">{{blog_post.publication_date}}</span>
+</div>
+{% endblock %}

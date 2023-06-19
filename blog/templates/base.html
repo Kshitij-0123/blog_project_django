@@ -1,0 +1,40 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Blog</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{% static 'css/styles.css' %}"
+    />
+    {% block head %} {% endblock %}
+  </head>
+  <body>
+    <header>
+      <h2>My Blogs</h2>
+      <nav>
+        <ul>
+          <li><a href="{% url 'blog:index' %}">Home</a></li>
+          {% if user.is_authenticated %}
+          <li><a href="{% url 'blog:logout' %}">Logout</a></li>
+          {% else %}
+          <li><a href="{% url 'blog:login' %}">Login</a></li>
+          <li><a href="{% url 'blog:signup' %}">Sign Up</a></li>
+          {% endif %}
+        </ul>
+      </nav>
+    </header>
+    <main>
+      {% block content %}{% endblock %}
+
+      <a
+        class="createButton"
+        target="_blank"
+        href="{% url 'blog:blog_create' %}"
+      >
+        Create New Post
+      </a>
+    </main>
+  </body>
+</html>
